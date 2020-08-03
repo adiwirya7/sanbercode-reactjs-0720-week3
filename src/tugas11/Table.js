@@ -26,7 +26,7 @@ class Row extends React.Component{
 class Table extends React.Component {
     render() {
         return (
-            <div style={{width: "80%", margin:"auto"}}>
+            <div style={{width: "50%", margin:"auto"}}>
                     <h1 style={{textAlign:"center"}}>Tabel Harga Buah</h1>
                     <table style={{width:"100%"}}>
                     <tr>
