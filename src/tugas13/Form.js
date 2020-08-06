@@ -36,7 +36,7 @@ class Form extends Component{
     event.preventDefault()
     let input = this.state.input
     if (input['nama'].replace(/\s/g,'') === "" || input['harga'].toString().replace(/\s/g,'') === "" ||input['berat'].toString().replace(/\s/g,'') === "") {
-        alert("Input tidak boleh ada yang Kosong")
+        alert("Input Tidak Boleh Ada Y Kosong")
     } else {
         let input = this.state.input
     let newDaftar = this.state.daftarHargaBuah
@@ -57,7 +57,7 @@ class Form extends Component{
         indexOfForm:-1
     })
     }
-    
+    alert("Data Berhasil Ditambahkan")
   }
   handleEdit(event){
     let index = event.target.value
@@ -71,6 +71,7 @@ class Form extends Component{
         },
         indexOfForm : index
     })
+    alert("Data Berhasil Diubah")
   }
   
   handleDelete(event){
@@ -84,7 +85,7 @@ class Form extends Component{
     }else{
         this.setState({daftarHargaBuah: newDaftar})
     }
-    
+    alert("Data Berhasil Dihapus")
   }
 
   render(){
